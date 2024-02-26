@@ -1,14 +1,16 @@
+import Sorter from "@/components/sorter";
+
 const characters = [
-  'Reimu Hakurei',
-  'Marisa Kirisame',
-  'Sanae Kochiya',
-  'Youmu Konpaku',
-  'Reisen Udongein Inaba',
-  'Cirno',
-  'Remilia Scarlet',
-  'Flandre Scarlet',
-  'Sakuya Izayoi',
-  'Yukari Yakumo',
+  "Reimu Hakurei",
+  "Marisa Kirisame",
+  "Sanae Kochiya",
+  "Youmu Konpaku",
+  "Reisen Udongein Inaba",
+  "Cirno",
+  "Remilia Scarlet",
+  "Flandre Scarlet",
+  "Sakuya Izayoi",
+  "Yukari Yakumo",
 ];
 
 export default function Home() {
@@ -21,11 +23,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="flex flex-row gap-x-4">
-        <div className="border border-black p-4">Left choice</div>
-        <div className="border border-black p-4">Tie</div>
-        <div className="border border-black p-4">Right Choice</div>
-      </div>
+      <Sorter />
     </main>
   );
 }
